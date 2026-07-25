@@ -1,0 +1,47 @@
+# typed: false
+# frozen_string_literal: true
+
+# Binary formula: installs the prebuilt `kannaka` release binary for the host
+# platform; Homebrew verifies the pinned sha256 digests against the download.
+# Linux binaries are static musl, so they run on any distro Homebrew-on-Linux
+# supports.
+#
+# Bumped per release by publish-channels.yml in NickFlach/kannaka-memory
+# (the version line + four url/sha256 pairs) — keep that updater in sync if
+# the layout here changes.
+class Kannaka < Formula
+  desc "Wave-interference (Holographic Resonance Medium) memory for AI agents"
+  homepage "https://github.com/NickFlach/kannaka-memory"
+  version "0.11.1"
+  license "MIT"
+
+  on_macos do
+    on_arm do
+      url "https://github.com/NickFlach/kannaka-memory/releases/download/v0.11.1/kannaka-macos-aarch64"
+      sha256 "f626cf7204ed22a14feb935ab12caa75133318884cda3342ff770cf9dbc95b11"
+    end
+    on_intel do
+      url "https://github.com/NickFlach/kannaka-memory/releases/download/v0.11.1/kannaka-macos-x86_64"
+      sha256 "b2d9977c4612286d3f7a52f0a40f882b26827a5b67fc573e27fba6d69104e1d8"
+    end
+  end
+
+  on_linux do
+    on_arm do
+      url "https://github.com/NickFlach/kannaka-memory/releases/download/v0.11.1/kannaka-linux-aarch64"
+      sha256 "3ab34a83dcf3d523b46722d381267a471a675d96e0729eae2d145c2f7837049b"
+    end
+    on_intel do
+      url "https://github.com/NickFlach/kannaka-memory/releases/download/v0.11.1/kannaka-linux-x86_64"
+      sha256 "e59562b7bc88190552f88c8c7a9680bb2f96f5b4f1d7e04ab9ace3e41df6ada1"
+    end
+  end
+
+  def install
+    bin.install Dir["kannaka-*"].first => "kannaka"
+  end
+
+  test do
+    assert_match version.to_s, shell_output("#{bin}/kannaka --version")
+  end
+end
