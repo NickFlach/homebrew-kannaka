@@ -10,28 +10,28 @@
 class Kannaka < Formula
   desc "Wave-interference (Holographic Resonance Medium) memory for AI agents"
   homepage "https://github.com/NickFlach/kannaka-memory"
-  version "0.11.1"
+  version "0.12.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/NickFlach/kannaka-memory/releases/download/v0.11.1/kannaka-macos-aarch64"
-      sha256 "f626cf7204ed22a14feb935ab12caa75133318884cda3342ff770cf9dbc95b11"
+      url "https://github.com/NickFlach/kannaka-memory/releases/download/v0.12.0/kannaka-macos-aarch64"
+      sha256 "e556bd0cb89b570c5d161cd81eee1565ce90a91d8db5c236f12d3bcf120989ec"
     end
     on_intel do
-      url "https://github.com/NickFlach/kannaka-memory/releases/download/v0.11.1/kannaka-macos-x86_64"
-      sha256 "b2d9977c4612286d3f7a52f0a40f882b26827a5b67fc573e27fba6d69104e1d8"
+      url "https://github.com/NickFlach/kannaka-memory/releases/download/v0.12.0/kannaka-macos-x86_64"
+      sha256 "06cdd19268b693ad0384f4a7bfe092e7d9b41997f4f88c98fbb6ae5cd3e9ed79"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/NickFlach/kannaka-memory/releases/download/v0.11.1/kannaka-linux-aarch64"
-      sha256 "3ab34a83dcf3d523b46722d381267a471a675d96e0729eae2d145c2f7837049b"
+      url "https://github.com/NickFlach/kannaka-memory/releases/download/v0.12.0/kannaka-linux-aarch64"
+      sha256 "adede6b36084c0612046b211140871516d9ab67e80d1f8ddb8490ef959652b42"
     end
     on_intel do
-      url "https://github.com/NickFlach/kannaka-memory/releases/download/v0.11.1/kannaka-linux-x86_64"
-      sha256 "e59562b7bc88190552f88c8c7a9680bb2f96f5b4f1d7e04ab9ace3e41df6ada1"
+      url "https://github.com/NickFlach/kannaka-memory/releases/download/v0.12.0/kannaka-linux-x86_64"
+      sha256 "504cfd814c3776e3b7128876fc1fb07cf20a31d98437a81f0604d48405340aa1"
     end
   end
 
