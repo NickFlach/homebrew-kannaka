@@ -1,17 +1,17 @@
 # homebrew-kannaka
 
-Homebrew tap for [kannaka](https://github.com/NickFlach/kannaka-memory) — the
+Homebrew tap for [kannaka](https://github.com/kannaka-labs/kannaka-memory) — the
 wave-interference (Holographic Resonance Medium) memory CLI for AI agents.
 
 ```sh
-brew install nickflach/kannaka/kannaka
+brew install kannaka-labs/kannaka/kannaka
 kannaka --version
 ```
 
 Or in two steps:
 
 ```sh
-brew tap nickflach/kannaka
+brew tap kannaka-labs/kannaka
 brew install kannaka
 ```
 
@@ -25,5 +25,5 @@ The formula is bumped automatically on each kannaka release by the
 ## Other install channels
 
 - npm: `npx kannaka` / `npm i -g kannaka`
-- Docker: `docker run --rm ghcr.io/nickflach/kannaka --version`
+- Docker: `docker run --rm ghcr.io/kannaka-labs/kannaka --version`
 - Direct: `curl -sSf https://install.ninja-portal.com/kannaka | sh`
