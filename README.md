@@ -27,3 +27,7 @@ The formula is bumped automatically on each kannaka release by the
 - npm: `npx kannaka` / `npm i -g kannaka`
 - Docker: `docker run --rm ghcr.io/kannaka-labs/kannaka --version`
 - Direct: `curl -sSf https://install.ninja-portal.com/kannaka | sh`
+
+## License
+
+[Space Child License v1.0](https://legal.spacechild.love/license) — source-available and peace-conditional: free for peaceful, humanitarian, commercial and defensive use; withheld for the uses in its Peace Clause. See `LICENSE` and `NOTICE`.
